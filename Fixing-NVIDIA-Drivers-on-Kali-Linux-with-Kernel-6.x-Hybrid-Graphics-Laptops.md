@@ -1,8 +1,8 @@
-# Fixing NVIDIA Drivers on Kali Linux with Kernel 6.x (Hybrid Graphics Laptops)
+# Fixing NVIDIA Drivers Black Screen on Kali Linux with Kernel 6.x (Hybrid AMD/Intel + NVIDIA, External Monitor)
 
 ## Problem Overview
 
-Lenovo Legion 5 laptops with hybrid graphics (AMD CPU with iGPU + NVIDIA dGPU) experience black screens when connecting external monitors on Linux. This occurs because the AMD iGPU driver conflicts with NVIDIA, even when BIOS is set to discrete GPU mode.
+This guide fixes a black screen issue on Kali Linux 6.x when using NVIDIA GPUs on hybrid laptops (AMD or Intel iGPU + NVIDIA dGPU), especially when external monitors are connected. The problem typically appears during boot with ACPI BIOS errors and amdgpu DisplayPort failures, causing the system to hang before the graphical login screen.
 
 ## Symptoms
 
@@ -11,8 +11,9 @@ Lenovo Legion 5 laptops with hybrid graphics (AMD CPU with iGPU + NVIDIA dGPU) e
 - Display only works after manually running `sudo startx`
 - Boot errors showing: `amdgpu ERROR: dp_get_max_link_enc_cap: Max link encoder caps unknown`
 
-### Boot Error Example (What You Will See after you try to install nvidia-drivers)
-![Kernel boot errors showing ACPI and amdgpu issues](Photo.png)
+### Boot Error Example (What You Will See after you try to install nvidia-drivers!
+
+[Kali Linux boot black screen showing ACPI BIOS Error and amdgpu dp_get_max_link_enc_cap on NVIDIA hybrid laptop](Photo.png)
 
 ## Prerequisites
 

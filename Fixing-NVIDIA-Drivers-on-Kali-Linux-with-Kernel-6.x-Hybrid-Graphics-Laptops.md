@@ -1,4 +1,4 @@
-# Fixing NVIDIA Drivers Black Screen on Kali Linux with Kernel 6.x (Hybrid AMD/Intel + NVIDIA, External Monitor)
+# Fix External Monitor Black Screen on Kali Linux (Hybrid AMD/Intel + NVIDIA)
 
 ## Problem Overview
 
